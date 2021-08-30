@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charterd Accontant | Hardika Kumat</title>
+
+    <!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            overflow: visible;
+        }
+        body{
+            background-color: #fafafa;
+        }
+        #menu_icon_container{
+            width: 2em;
+            height: 2em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .ca_logo{
+            margin-top: -2.5%;
+            filter: drop-shadow(5px 5px 5px #000);
+            transform: scale(0.5);
+            transform-origin: center center;
+            margin-bottom: -2.5%;
+        }
+        .logo_text{
+            text-transform: uppercase;
+        }
+        #navbar{
+            display: none;
+            width: 100vw;
+            height: 100vh;
+        }
+        .service_title{
+            color: #073C5E;
+        }
+        #underline{
+            background-color: #7FB74C;
+            width: 20%;
+            height: 5px;
+            display: block;
+            border-radius: 2.5px;
+        }
+        .card-header {
+            height: 150px;
+            background-color: #7FB74C;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 100px;
+        }
+
+        .card-img {
+            align-self: flex-end;
+            border-radius: 50%;
+            width: 200px; height: 200px;
+            transform: translateY(50%); /* additional 50% of own height */
+            box-shadow: 0 0 0 10px #fff;
+        }
+        .btn-ctc{
+            background-color: #073C5E;
+            color: #fff;
+        }
+        .btn-ctc:hover{
+            background-color: #7FB74C;
+            color: #000;
+        }
+
+        .modal_title{
+            font-weight: 600;
+        }
+        
+        .blue{
+            color: #073C5E;
+        }
+
+        .green{
+            color: #7FB74C;
+        }
+        a:hover{
+            color: #073C5E;
+        }
+    </style>
+</head>
+<body>
+    <!-- main -->
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="d-flex justify-content-end mx-4 mt-4">
+                <span style="border-style: solid; border-color: #7FB74C;" id="menu_icon_container" onclick="toggle_menu_icon()">
+                    <i style="color: #073C5E;" class="fas fa-bars" id="menu_icon"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <section class="navbar" id="navbar">
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center align-items-center">
+                <div class="display-1">
+                    <span class="blue">About</span>
+                    <br>
+                    <span class="blue">Service</span>
+                    <br>
+                    <span class="blue">Contact</span>
+                    <br>
+                    <br>
+                    <span id="underline"></span>
+                    <br>
+                    <span>
+                        <a class="green" href="http://linkedin.com/in/hardika-k-6776a79a"><i class="mx-1 fab fa-linkedin"></i></a>
+                        <a class="green" href="tel:+917774884403"><i class="mx-1 fas fa-phone-square-alt"></i></a>
+                        <a class="green" href="mailto:hardikakumat@gmail.com"><i class="mx-1 fas fa-envelope-open-text"></i></a>
+                        <a class="green" href="https://wa.me/+917774884403"><i class="mx-1 fab fa-whatsapp"></i></a>    
+                        <a class="green" href="cv.pdf" target="_blank"><i class="mx-1 fas fa-file-download"></i></a>    
+                        <a class="green" href="https://calendly.com/hardikakumat/30min" target="_blank"><i class="mx-1 far fa-calendar-plus"></i></a>    
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <secion id="main" class="main">
+        <!-- Introduction -->
+        <section id="introduction" class="introduction">
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="d-flex justify-content-center">
+                        <img src="ca_logo.png" class="img-fluid ca_logo" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="display-2 logo_text" style="color: #7FB74C;"><span style="color: #073C5E;">Hardika</span> Kumat</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section id="service" class="service">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="display-3 mt-5 mb-3">
+                            <span style="color: #073C5E;">Services</span>
+                            <span id="underline"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card m-1" style="height: 300px;">
+                            <img src="it.jpg" class="card-img-top" height="200px" alt="...">
+                            <div class="card-body d-flex flex-column">
+                              <h5 class="service_title card-title text-center">IT Return</h5>
+                              <a class="d-flex align-items-center justify-content-end text-decoration-none fs-6" style="margin-top:auto;color:#7FB74C" data-bs-toggle="modal" data-bs-target="#itreturn" href="#">Learn More <i class="fas fa-arrow-right mx-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="itreturn" tabindex="-1" aria-labelledby="itreturnModal" aria-hidden="true">
+                        <div class="modal-dialog  modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title modal_title" id="itreturnModal">IT Return</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body p-4 text-center">
+                                <p>IT return - One has to file an ITR in case aggregate of all his income exceeds the basic exemption limit.</p>
+                                <a href="tel:+917774884403"><button class="btn btn-ctc" type="button">Consult Now <i class="mx-1 fas fa-phone"></i></button></a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card m-1" style="height: 300px;">
+                            <img src="audit.jpg" class="card-img-top" height="200px" alt="...">
+                            <div class="card-body d-flex flex-column">
+                              <h5 class="service_title card-title text-center">Audit</h5>
+                              <a class="d-flex align-items-center justify-content-end text-decoration-none fs-6" style="margin-top:auto;color:#7FB74C" data-bs-toggle="modal" data-bs-target="#audit" href="#" href="#">Learn More <i class="fas fa-arrow-right mx-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="audit" tabindex="-1" aria-labelledby="auditModal" aria-hidden="true">
+                        <div class="modal-dialog  modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title modal_title" id="auditModal">Audit</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body p-4 text-center">
+                                <p>Any person carrying the business is required to get his books of accounts audited if the gross receipts/turnover exceeds ₹1 crore during financial year.</p>
+                                <a href="tel:+917774884403"><button class="btn btn-ctc" type="button">Consult Now <i class="mx-1 fas fa-phone"></i></button></a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card m-1" style="height: 300px;">
+                            <img src="gst.jpg" class="card-img-top" height="200px" alt="...">
+                            <div class="card-body d-flex flex-column">
+                              <h5 class="service_title card-title text-center">GST Registeration and Return</h5>
+                              <a class="d-flex align-items-center justify-content-end text-decoration-none fs-6" style="margin-top:auto;color:#7FB74C" data-bs-toggle="modal" data-bs-target="#gstreturn" href="#" href="#">Learn More <i class="fas fa-arrow-right mx-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="gstreturn" tabindex="-1" aria-labelledby="gstreturnModal" aria-hidden="true">
+                        <div class="modal-dialog  modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title modal_title" id="gstreturnModal">GST Registeration and Return</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body p-4 text-center">
+                                <p>A GST return is a document containing details of all income and expense which a taxpayer (every GSTIN) is required to file with the tax administrative authorities.</p>
+                                <a href="tel:+917774884403"><button class="btn btn-ctc" type="button">Consult Now <i class="mx-1 fas fa-phone"></i></button></a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card m-1" style="height: 300px;">
+                            <img src="tds.jpg" class="card-img-top" height="200px" alt="...">
+                            <div class="card-body d-flex flex-column">
+                              <h5 class="service_title card-title text-center">TDS Registeration and Return</h5>
+                              <a class="d-flex align-items-center justify-content-end text-decoration-none fs-6" style="margin-top:auto;color:#7FB74C" data-bs-toggle="modal" data-bs-target="#tdsreturn" href="#" href="#">Learn More <i class="fas fa-arrow-right mx-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="tdsreturn" tabindex="-1" aria-labelledby="tdsreturnModal" aria-hidden="true">
+                        <div class="modal-dialog  modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title modal_title" id="tdsreturnModal">TDS Registeration and Return</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body p-4 text-center">
+                                <p>A TDS Return is a quarterly statement which has to be submitted to the Income Tax Department of India. Submitting TDS Return is mandatory if you are a deductor. It has details of TDS deducted and deposited by you.</p>
+                                <a href="tel:+917774884403"><button class="btn btn-ctc" type="button">Consult Now <i class="mx-1 fas fa-phone"></i></button></a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About me -->
+
+        <section class="about" id="about">
+            <div class="container mb-5">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="display-3 mt-5 mb-3">
+                            <span style="color: #073C5E;">About Me</span>
+                            <span id="underline"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card-header">
+                            <img class="card-img" alt="User image" src="profile.jpg">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="text-center">
+                            <h3 class="green"><i>Hi, I am Hardika Kumat.</i></h3>
+                            <h1 class="blue mb-3"><i>Best CA avaliable online.</i></h1>
+                            <p class="mt-2 mb-3 fs-5">Experienced in all type of <b>Audits</b>, filling <b>IT Returns</b>, filling <b>GST Returns</b>, filling <b>TDS Returns</b>, drafting <b>Legal Deeds and Certificates.</b></p>
+                            <!-- <center><span id="underline" style="margin-bottom: 15px;"></span></center> -->
+                            <div class="d-inline mx-auto">
+                                <a href="http://linkedin.com/in/hardika-k-6776a79a"><button class="btn btn-ctc m-1" type="button"><i class="mx-1 fab fa-linkedin"></i> LinkedIn</button></a>
+                                <!-- <button class="btn btn-ctc m-1" type="button"><i class="mx-1 fab fa-instagram"></i> Instagram</button> -->
+                                <!-- <button class="btn btn-ctc m-1" type="button"><i class="mx-1 fas fa-phone-square-alt"></i> Call</button> -->
+                                <!-- <button class="btn btn-ctc m-1" type="button"><i class="mx-1 fas fa-envelope-open-text"></i> Mail</button> -->
+                                <a href="cv.pdf" target="_blank"><button class="btn btn-ctc m-1" type="button"><i class="mx-1 fas fa-file-download"></i> Resume</button></a>
+                                <!-- <button class="btn btn-ctc m-1" type="button"><i class="mx-1 far fa-calendar-plus"></i> Schedule Meeting</button> -->
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Me -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="display-3 my-3">
+                            <span style="color: #073C5E;">Contact Me</span>
+                            <span id="underline"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-12">
+                        <div class="text-center my-1 fs-3">
+                            Large enough to meet all your financial needs. Small enough to know your name when you call.
+                        </div>
+                        <div class="text-center fs-5">
+                               I am here to help or answer any question you might have. Feel free to contact Me Now!
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-md-5">
+                    <a class="col-md-3 my-3 text-center fs-1 text-decoration-none" href="https://wa.me/+917774884403"><span class="blue"><i class="fab fa-whatsapp green"></i><br>WhatsApp</span></a>
+                    <a class="col-md-3 my-3 text-center fs-1 text-decoration-none" href="mailto:hardikakumat@gmail.com"><span class="blue"><i class="fas fa-envelope-open-text green"></i><br>Mail Me</span></a>
+                    <a class="col-md-3 my-3 text-center fs-1 text-decoration-none" href="tel:+917774884403"><span class="blue"><i class="fas fa-phone-square-alt green"></i><br>Call Me</span></a>
+                    <a class="col-md-3 my-3 text-center fs-1 text-decoration-none" href="https://calendly.com/hardikakumat/30min" target="_blank"><span class="blue"><i class="far fa-calendar-plus green"></i><br>Appointment</span></a>
+                </div>
+                    
+                
+
+            </div>
+        </section>
+    </secion>
+
+    
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script>
+        function toggle_menu_icon() {
+            var menu_icon_id = document.getElementById("menu_icon");
+            menu_icon_id.classList.toggle("fa-times")
+            var navbar_container = document.getElementById("navbar");
+            var main_container = document.getElementById('main')
+            if (navbar_container.style.display === "block") {
+                navbar_container.style.display = "none";
+                main.style.display = "block"
+            } else {
+                navbar_container.style.display = "block";
+                main.style.display = "none"
+            }
+        } 
+    </script>
+</body>
+</html>
